@@ -1,0 +1,82 @@
+/* AMENTIA SYS CSS */
+
+body {
+    background: #2E2E2E;
+    margin: 0px;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #151515;
+}
+
+header nav {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 960px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+}
+
+header nav #logo {
+    position: relative;
+    font-size: 40px;
+    top: 5px;
+    float: left;
+    left: 10px;
+}
+
+header nav #nav-bar {
+    position: relative;
+    font-size: 16px;
+    float: right;
+    top: 22px;
+}
+
+header nav #nav-bar a {
+    display: block;
+    float: left;
+    margin-left: 15px;
+}
+
+header nav #nav-bar a:link {
+    text-decoration: none;
+    color: #81F781;
+}
+
+header nav #nav-bar a:visited {
+    text-decoration: none;
+    color: #81F781;
+}
+
+/* CONTENT */
+
+#content {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+#content #content-body {
+    position: relative;
+    height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    background: #424242;
+    height: 200px;
+}

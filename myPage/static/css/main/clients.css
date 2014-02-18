@@ -1,0 +1,63 @@
+.client {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 230px;
+    background: #424242;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.client .title {
+    text-align: center;
+    color: #81F781;
+    height: 30px;
+    padding-top: 5px;
+    background: #151515;
+    font-size: 17px;
+}
+
+.client .content {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.client .detail {
+    text-align: left;
+    background: #1C1C1C;
+    height: 25px;
+    padding-top: 3px;
+    border-bottom: 1px solid grey;
+    padding-left: 3px;
+}
+
+.client .detail a.alta:link {
+    text-decoration: none;
+    color: red;
+}
+
+.client .detail a.alta:visited {
+    text-decoration: none;
+    color: red;
+}
+
+.client .detail a.media:link {
+    text-decoration: none;
+    color: #FE9A2E;
+}
+
+.client .detail a.media:visited {
+    text-decoration: none;
+    color: #FE9A2E;
+}
+
+.client .detail a.baja:link {
+    text-decoration: none;
+    color: yellow;
+}
+
+.client .detail a.baja:visited {
+    text-decoration: none;
+    color: yellow;
+}

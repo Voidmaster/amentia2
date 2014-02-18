@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}Clientes{% endblock %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/main/clients.css' %}"/>{% endblock %}
+
+{% block content %}
+
+    {% for client in latest_clients %}
+        <div class="client">
+            <div class="title">
+                {{ client.name }}
+            </div>
+            <div class="content">
+                {{ client.description }}
+            </div>
+            <div class="detail">
+                {% if client.is_active %}
+                    Estado: En desarrollo
+                {% endif %}
+            </div>
+            <div class="detail">
+                {% if client.priority == 0 %}
+                    Prioridad: <a class="alta" href="">Alta</a>
+                {% elif client.priority == 1 %}
+                    Prioridad: <a class="media" href="">Media</a>
+                {% elif client.priority == 2 %}
+                    Prioridad: <a class="baja" href="">Baja</a>
+                {% endif %}
+            </div>
+            <div class="detail">
+                Servicio: {{ client.service }}
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
